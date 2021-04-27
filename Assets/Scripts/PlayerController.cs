@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+//to use the photon hashtable not unitys
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 
 public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
@@ -215,6 +216,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 	{
 		if(!PV.IsMine && targetPlayer == PV.Owner)
 		{
+			//possibly can add in different sprites here for the different guns
 			EquipItem((int)changedProps["itemIndex"]);
 		}
 	}

@@ -14,6 +14,7 @@ public class SingleShotGun : Gun
     public CameraShake cameraShake;
 
     public AudioSource GunFire;
+	public GameObject muzzleFlashLight;
 
     void Awake()
 	{
@@ -29,6 +30,7 @@ public class SingleShotGun : Gun
 	{
 		muzzleFlash.Play();
 
+		StartCoroutine(muzzleFlashFlash());
         StartCoroutine(cameraShake.Shake(.15f, cameraShaker));
 
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f));
@@ -40,6 +42,13 @@ public class SingleShotGun : Gun
 		}
 
 		GunFire.Play();
+	}
+
+	IEnumerator muzzleFlashFlash()
+    {
+		muzzleFlashLight.SetActive(true);
+		yield return new WaitForSeconds(0.1f);
+		muzzleFlashLight.SetActive(false);
 	}
 
 	[PunRPC]

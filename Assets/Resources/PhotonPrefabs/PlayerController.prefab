@@ -220,8 +220,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 0.69796455, b: 0, a: 0.7294118}
-  m_Intensity: 1.5
-  m_Range: 22.618109
+  m_Intensity: 2
+  m_Range: 35
   m_SpotAngle: 51.96464
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -678,7 +678,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 1329926201890451152}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 64
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
@@ -910,6 +910,99 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.12, y: 2, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1837692711797286349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7186906347695031717}
+  - component: {fileID: 5736894251411550430}
+  m_Layer: 0
+  m_Name: Point Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &7186906347695031717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837692711797286349}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4922278061369508949}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!108 &5736894251411550430
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837692711797286349}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.58779687, b: 0, a: 1}
+  m_Intensity: 4
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &2382016539952700226
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,6 +1065,7 @@ Transform:
   - {fileID: 3738960085334214338}
   - {fileID: 4573872077468049426}
   - {fileID: 1152677984862311212}
+  - {fileID: 7186906347695031717}
   m_Father: {fileID: 9034352397292657314}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1701,6 +1795,7 @@ MonoBehaviour:
   cameraShaker: 0.1
   cameraShake: {fileID: 1298722246408799758}
   GunFire: {fileID: 934385429202889940}
+  muzzleFlashLight: {fileID: 1837692711797286349}
 --- !u!114 &5540217625038843005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1875,6 +1970,7 @@ MonoBehaviour:
   cameraShaker: 0.1
   cameraShake: {fileID: 1298722246408799758}
   GunFire: {fileID: 7728837801355334695}
+  muzzleFlashLight: {fileID: 1837692711797286349}
 --- !u!114 &5574735849871064071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2049,6 +2145,7 @@ MonoBehaviour:
   cameraShaker: 0.1
   cameraShake: {fileID: 1298722246408799758}
   GunFire: {fileID: 3464733115670876679}
+  muzzleFlashLight: {fileID: 1837692711797286349}
 --- !u!114 &1176893512993376066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2287,6 +2384,7 @@ MonoBehaviour:
   cameraShaker: 0.1
   cameraShake: {fileID: 1298722246408799758}
   GunFire: {fileID: 3828307549547792938}
+  muzzleFlashLight: {fileID: 1837692711797286349}
 --- !u!114 &2590254984816002982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2503,15 +2601,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b46264f9e12caed4cb53e7c2ad64aa54, type: 3}
---- !u!4 &1343212282342674014 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4702343032138574, guid: b46264f9e12caed4cb53e7c2ad64aa54,
-    type: 3}
-  m_PrefabInstance: {fileID: 1347905279457551632}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &1186115743289321296 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198533653044838976, guid: b46264f9e12caed4cb53e7c2ad64aa54,
+    type: 3}
+  m_PrefabInstance: {fileID: 1347905279457551632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1343212282342674014 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4702343032138574, guid: b46264f9e12caed4cb53e7c2ad64aa54,
     type: 3}
   m_PrefabInstance: {fileID: 1347905279457551632}
   m_PrefabAsset: {fileID: 0}
@@ -2902,15 +3000,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b46264f9e12caed4cb53e7c2ad64aa54, type: 3}
---- !u!4 &5250402453189700823 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4702343032138574, guid: b46264f9e12caed4cb53e7c2ad64aa54,
-    type: 3}
-  m_PrefabInstance: {fileID: 5246018427364886425}
-  m_PrefabAsset: {fileID: 0}
 --- !u!198 &5335864754165384665 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 198533653044838976, guid: b46264f9e12caed4cb53e7c2ad64aa54,
+    type: 3}
+  m_PrefabInstance: {fileID: 5246018427364886425}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5250402453189700823 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4702343032138574, guid: b46264f9e12caed4cb53e7c2ad64aa54,
     type: 3}
   m_PrefabInstance: {fileID: 5246018427364886425}
   m_PrefabAsset: {fileID: 0}
