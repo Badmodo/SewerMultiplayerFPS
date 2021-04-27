@@ -219,8 +219,8 @@ Light:
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
-  m_Color: {r: 1, g: 0.69796455, b: 0, a: 0.7294118}
-  m_Intensity: 2
+  m_Color: {r: 1, g: 0.9700888, b: 0.9009434, a: 0.7294118}
+  m_Intensity: 1.6
   m_Range: 35
   m_SpotAngle: 51.96464
   m_InnerSpotAngle: 21.80208
@@ -908,7 +908,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.12, y: 2, z: 0.1}
+  m_Size: {x: 1.12, y: 2, z: 0.15}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1837692711797286349
 GameObject:

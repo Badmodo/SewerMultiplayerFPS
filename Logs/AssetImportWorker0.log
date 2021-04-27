@@ -15,11 +15,11 @@ C:/Users/samle/OneDrive/Documents/GitHub/SewerMultiplayerFPS/SewerMultiplayerFPS
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62085
+63069
 Successfully changed project path to: C:/Users/samle/OneDrive/Documents/GitHub/SewerMultiplayerFPS/SewerMultiplayerFPS
 C:/Users/samle/OneDrive/Documents/GitHub/SewerMultiplayerFPS/SewerMultiplayerFPS
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 121.22 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 87.30 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,202 +35,82 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56900
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56408
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004965 seconds.
+Registered in 0.006180 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 107.98 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 82.07 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.878 seconds
+- Completed reload, in  2.867 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007516 seconds.
+Registered in 0.005704 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.939 seconds
+- Completed reload, in  3.006 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
-Refreshing native plugins compatible for Editor in 1.02 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 1.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1807 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 94.2 MB.
-System memory in use after: 93.7 MB.
+System memory in use before: 94.1 MB.
+System memory in use after: 93.6 MB.
 
-Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 2247.
-Total: 6.893600 ms (FindLiveObjects: 0.505200 ms CreateObjectMapping: 0.197900 ms MarkObjects: 5.289000 ms  DeleteObjects: 0.898100 ms)
-
-========================================================================
-Received Import Request.
-  path: Assets/Scenes/Sewer1/LightingData.asset
-  artifactKey: Guid(8b3dc7e8fb8e0164283b7e45d242c19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Sewer1/LightingData.asset using Guid(8b3dc7e8fb8e0164283b7e45d242c19a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '053207c6560bb467f1431644fa6bb749') in 0.112663 seconds
-  Import took 0.122182 seconds .
+Unloading 88 unused Assets to reduce memory usage. Loaded Objects now: 2248.
+Total: 11.707000 ms (FindLiveObjects: 0.556100 ms CreateObjectMapping: 0.292900 ms MarkObjects: 8.499300 ms  DeleteObjects: 2.354300 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000734 seconds.
-  path: Assets/FastLowPolyWater/LowpolyWaterDemo/SettingsDemoWater/LightingData.asset
-  artifactKey: Guid(45224d0ac91fd5e48b01ab3e27c12267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FastLowPolyWater/LowpolyWaterDemo/SettingsDemoWater/LightingData.asset using Guid(45224d0ac91fd5e48b01ab3e27c12267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ca70d9c3b04281eb6ffbb8268980f52') in 0.025173 seconds
-  Import took 0.035298 seconds .
+  path: Assets/Scenes/Sewer2.unity
+  artifactKey: Guid(589ab7634120e75499f1f4c750f04765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Sewer2.unity using Guid(589ab7634120e75499f1f4c750f04765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0768c0c172e370eed19a3d7ece63716e') in 0.035825 seconds
+  Import took 0.050042 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000724 seconds.
-  path: Assets/FastLowPolyWater/LowpolyWaterDemo/LowpolyWaterDemo LWRP/LightingData.asset
-  artifactKey: Guid(cc10f10194e81954986737036cbf9fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/FastLowPolyWater/LowpolyWaterDemo/LowpolyWaterDemo LWRP/LightingData.asset using Guid(cc10f10194e81954986737036cbf9fdc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f74feef5472888e58e73a04885aeba') in 0.034460 seconds
-  Import took 0.047646 seconds .
+  Time since last request: 18.230688 seconds.
+  path: Assets/Audio/audio_hero_Triads_SIPML_J-0316.mp3
+  artifactKey: Guid(369b57f93bd634d4d8d42da56a729be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio/audio_hero_Triads_SIPML_J-0316.mp3 using Guid(369b57f93bd634d4d8d42da56a729be2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b113e154c0b3d29b543dd7caa6dceb41') in 0.275057 seconds
+  Import took 0.287356 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000666 seconds.
-  path: Assets/Particle FX Pack/PolygonParticles/Models/SM_LightRayRound 1.fbx
-  artifactKey: Guid(0110c4e8145949244a8c41db8957bcdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Particle FX Pack/PolygonParticles/Models/SM_LightRayRound 1.fbx using Guid(0110c4e8145949244a8c41db8957bcdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce3bdfea67a84dbc41855f0a386e4435') in 0.512312 seconds
-  Import took 0.522798 seconds .
+  Time since last request: 47.356836 seconds.
+  path: Assets/Scenes/Sewer1.unity
+  artifactKey: Guid(eaf0f50ad16bdf64db87030122875609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Sewer1.unity using Guid(eaf0f50ad16bdf64db87030122875609) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce88a448db4e986591867a4ae8b410a') in 0.031782 seconds
+  Import took 0.043767 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000755 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset
-  artifactKey: Guid(5cf8ae092ca54931b443bec5148f3c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset using Guid(5cf8ae092ca54931b443bec5148f3c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca02ec9f4767caf7915fb3ea524a3ef') in 0.024809 seconds
-  Import took 0.039436 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000718 seconds.
-  path: Assets/Particle FX Pack/PolygonParticles/Textures/PolygonParticles_Lightning_02.png
-  artifactKey: Guid(b1351c11dea42f845af85e73da6579f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Particle FX Pack/PolygonParticles/Textures/PolygonParticles_Lightning_02.png using Guid(b1351c11dea42f845af85e73da6579f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8861b2715b0625cd315a08055d7b4d1e') in 0.194818 seconds
-  Import took 0.204749 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000780 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset
-  artifactKey: Guid(4c86a3366cd840348ebe8dc438570ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset using Guid(4c86a3366cd840348ebe8dc438570ee4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1d9bb9b8f3b9a4c3733dfc1a7706e5') in 0.023727 seconds
-  Import took 0.036488 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000976 seconds.
-  path: Assets/Particle FX Pack/PolygonParticles/Textures/PolygonParticles_Lightning_02.png
-  artifactKey: Guid(b1351c11dea42f845af85e73da6579f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Particle FX Pack/PolygonParticles/Textures/PolygonParticles_Lightning_02.png using Guid(b1351c11dea42f845af85e73da6579f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8861b2715b0625cd315a08055d7b4d1e') in 0.020549 seconds
-  Import took 0.032542 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000777 seconds.
-  path: Assets/Particle FX Pack/PolygonParticles/Models/SM_LightRayCube 1.fbx
-  artifactKey: Guid(8297447ef77c7ab458f861bdd4a1885c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Particle FX Pack/PolygonParticles/Models/SM_LightRayCube 1.fbx using Guid(8297447ef77c7ab458f861bdd4a1885c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fc8d1ecc4a4dc665ac8e40ef809628c') in 0.091871 seconds
-  Import took 0.100867 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.054101 seconds.
-  path: Assets/Particle FX Pack/PolygonParticles/Models/SM_LightRayCube 1.fbx
-  artifactKey: Guid(8297447ef77c7ab458f861bdd4a1885c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Particle FX Pack/PolygonParticles/Models/SM_LightRayCube 1.fbx using Guid(8297447ef77c7ab458f861bdd4a1885c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fc8d1ecc4a4dc665ac8e40ef809628c') in 0.045655 seconds
-  Import took 0.052388 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 105.200151 seconds.
-  path: Assets/Prefabs/Guns/PlayerGuns/Grenade.prefab
-  artifactKey: Guid(1d901a61d5332f84e8ffe386cca74c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/PlayerGuns/Grenade.prefab using Guid(1d901a61d5332f84e8ffe386cca74c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ab7a0fc9ec5bd802984cc182539e1c') in 0.124257 seconds
-  Import took 0.131864 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000606 seconds.
-  path: Assets/Prefabs/Guns/PlayerGuns/Rocket.prefab
-  artifactKey: Guid(3fd8b5e65f140974faf22748f3f60c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/PlayerGuns/Rocket.prefab using Guid(3fd8b5e65f140974faf22748f3f60c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e84259cecf57cfdab928fab6c850dea3') in 0.032697 seconds
-  Import took 0.040067 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000561 seconds.
-  path: Assets/Prefabs/Guns/PlayerGuns/MachinePistol.prefab
-  artifactKey: Guid(ed4a7148b68d52240adfdf0634862e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/PlayerGuns/MachinePistol.prefab using Guid(ed4a7148b68d52240adfdf0634862e33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bb912e5c8db208688b00ea1b0930daa') in 0.098557 seconds
-  Import took 0.107400 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000618 seconds.
-  path: Assets/Prefabs/Guns/PlayerGuns/RocketLauncher.prefab
-  artifactKey: Guid(85d796954e66de44e8b8d945179d8a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/PlayerGuns/RocketLauncher.prefab using Guid(85d796954e66de44e8b8d945179d8a93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38330eb38c8800a93b8f414b8443b3b5') in 0.200183 seconds
-  Import took 0.208359 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000534 seconds.
-  path: Assets/Prefabs/Guns/PlayerGuns/Machinegun.prefab
-  artifactKey: Guid(7089d05dd586cb8458a5c9cfe8906e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/PlayerGuns/Machinegun.prefab using Guid(7089d05dd586cb8458a5c9cfe8906e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e98002f08ae87616c1fd0a2c57b17d') in 0.078328 seconds
-  Import took 0.085025 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000503 seconds.
-  path: Assets/Prefabs/Guns/PlayerGuns/Pistol.prefab
-  artifactKey: Guid(89f874f4d9f4a1643b0fb5d264f65c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/PlayerGuns/Pistol.prefab using Guid(89f874f4d9f4a1643b0fb5d264f65c56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8625ce5572fce84b25beb1a58919c823') in 0.049881 seconds
-  Import took 0.056978 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000506 seconds.
-  path: Assets/Prefabs/Guns/PlayerGuns/Shotgun.prefab
-  artifactKey: Guid(60ca6576bc0be674a9e1055ecc2fd887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Guns/PlayerGuns/Shotgun.prefab using Guid(60ca6576bc0be674a9e1055ecc2fd887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f51fdeed87dee508e013eaaa94671d') in 0.074706 seconds
-  Import took 0.081391 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.194016 seconds.
-  path: Assets/Prefabs/LightSmall.prefab
-  artifactKey: Guid(54d6d633794fc21489c943c21037e2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LightSmall.prefab using Guid(54d6d633794fc21489c943c21037e2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92406e62388c43cf18334e835336bd2') in 0.052055 seconds
-  Import took 0.059614 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.018778 seconds.
-  path: Assets/Prefabs/LightSmall.prefab
-  artifactKey: Guid(54d6d633794fc21489c943c21037e2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/LightSmall.prefab using Guid(54d6d633794fc21489c943c21037e2b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b92406e62388c43cf18334e835336bd2') in 0.011827 seconds
-  Import took 0.018792 seconds .
+  Time since last request: 20.157428 seconds.
+  path: Assets/Scenes/Sewer2.unity
+  artifactKey: Guid(589ab7634120e75499f1f4c750f04765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Sewer2.unity using Guid(589ab7634120e75499f1f4c750f04765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b3d80e06736ec718023448395da984f') in 0.002837 seconds
+  Import took 0.008431 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005401 seconds.
+Registered in 0.003392 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -245,15 +125,87 @@ Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.546 seconds
+- Completed reload, in  2.865 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.28 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 1.04 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1732 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.3 MB.
-System memory in use after: 103.8 MB.
+System memory in use before: 90.4 MB.
+System memory in use after: 89.9 MB.
 
-Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2264.
-Total: 6.510300 ms (FindLiveObjects: 0.338400 ms CreateObjectMapping: 0.145200 ms MarkObjects: 5.361400 ms  DeleteObjects: 0.662200 ms)
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2260.
+Total: 7.477400 ms (FindLiveObjects: 0.542200 ms CreateObjectMapping: 0.248200 ms MarkObjects: 5.467700 ms  DeleteObjects: 1.215600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.491050 seconds.
+  path: Assets/Resources/PhotonPrefabs/PlayerControllerOLD.prefab
+  artifactKey: Guid(344b29e78c596ad47b6e205062ce74a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/PhotonPrefabs/PlayerControllerOLD.prefab using Guid(344b29e78c596ad47b6e205062ce74a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1cad5c0f3a4fe4f30e309a8da1f708') in 0.231091 seconds
+  Import took 0.241573 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000701 seconds.
+  path: Assets/Resources/PhotonPrefabs/PlayerController.prefab
+  artifactKey: Guid(9c58df728f072f8459ea0a0f6269d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/PhotonPrefabs/PlayerController.prefab using Guid(9c58df728f072f8459ea0a0f6269d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '322ea60295d398776098857d58af5aaf') in 0.351453 seconds
+  Import took 0.369623 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.578209 seconds.
+  path: Assets/Resources/PhotonPrefabs/PlayerController.prefab
+  artifactKey: Guid(9c58df728f072f8459ea0a0f6269d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/PhotonPrefabs/PlayerController.prefab using Guid(9c58df728f072f8459ea0a0f6269d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc23acf8d9b18ae8e336000f74ff3859') in 0.302029 seconds
+  Import took 0.326656 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.652872 seconds.
+  path: Assets/Resources/PhotonPrefabs/PlayerController.prefab
+  artifactKey: Guid(9c58df728f072f8459ea0a0f6269d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/PhotonPrefabs/PlayerController.prefab using Guid(9c58df728f072f8459ea0a0f6269d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dea7596cbb1d8f5f45fa1ea06fdbe523') in 0.269716 seconds
+  Import took 0.290092 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005289 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at C:/Users/samle/OneDrive/Documents/GitHub/FPS-Game-Tutorial-master/FPS Game/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs:593)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at C:/Users/samle/OneDrive/Documents/GitHub/FPS-Game-Tutorial-master/FPS Game/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[C:/Users/samle/OneDrive/Documents/GitHub/FPS-Game-Tutorial-master/FPS Game/Library/PackageCache/com.unity.probuilder@4.5.0/Editor/EditorCore/EditorUtility.cs line 593]
+
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.668 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.11 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1732 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 90.8 MB.
+System memory in use after: 90.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2267.
+Total: 7.483800 ms (FindLiveObjects: 0.485500 ms CreateObjectMapping: 0.218000 ms MarkObjects: 5.863900 ms  DeleteObjects: 0.912000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.155123 seconds.
+  path: Assets/Resources/PhotonPrefabs/PlayerController.prefab
+  artifactKey: Guid(9c58df728f072f8459ea0a0f6269d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/PhotonPrefabs/PlayerController.prefab using Guid(9c58df728f072f8459ea0a0f6269d035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beed52c1e63bc16895ca2924d48f2c1e') in 0.462236 seconds
+  Import took 0.477786 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
