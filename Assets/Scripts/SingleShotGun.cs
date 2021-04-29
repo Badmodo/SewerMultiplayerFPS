@@ -16,7 +16,8 @@ public class SingleShotGun : Gun
     public AudioSource GunFire;
 	public GameObject muzzleFlashLight;
 
-    void Awake()
+
+	void Awake()
 	{
 		PV = GetComponent<PhotonView>();
 	}

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using TMPro;
 //to use the photon hashtable not unitys
 using Hashtable = ExitGames.Client.Photon.Hashtable;
+using System.Linq;
 
 public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 {
@@ -36,12 +37,17 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 
 	PlayerManager playerManager;
 
+	private float nextFire;
+	List<SingleShotGun> gunList;
+
 	//Torch 
 	public float timeRemaining = 10;
 	public bool timerIsRunning = false;
 	public TMP_Text timeText;
 	public GameObject light;
 	public GameObject torchTimer;
+
+	private bool canShoot = true;
 
 
 	////Animator
@@ -51,6 +57,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 	{
 		rb = GetComponent<Rigidbody>();
 		PV = GetComponent<PhotonView>();
+
+		gunList = GetComponentsInChildren<SingleShotGun>().ToList();
 
 		playerManager = PhotonView.Find((int)PV.InstantiationData[0]).GetComponent<PlayerManager>();
 	}
@@ -85,6 +93,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 			if(Input.GetKeyDown((i + 1).ToString()))
 			{
 				EquipItem(i);
+
 				break;
 			}
 		}
@@ -112,9 +121,17 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 			}
 		}
 
-		if(Input.GetMouseButtonDown(0))
+		if(Input.GetMouseButtonDown(0) && canShoot) //Time.time > nextFire)
 		{
-			items[itemIndex].Use();
+			GunInfo info = items[itemIndex].itemInfo as GunInfo;
+
+			nextFire = Time.time + info.fireRate;
+
+			StartCoroutine(Shoot(info.fireRate));
+
+			canShoot = false;
+
+            //items[itemIndex].Use();
 		}
 
 		if(transform.position.y < -10f) // Die if you fall out of the world
@@ -142,6 +159,15 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 				timerIsRunning = false;
 			}
 		}
+	}
+
+	IEnumerator Shoot(float _fireRateDelay)
+    {
+		items[itemIndex].Use();
+
+		yield return new WaitForSeconds(_fireRateDelay);
+
+		canShoot = true;
 	}
 
 	IEnumerator PlayerLight()
