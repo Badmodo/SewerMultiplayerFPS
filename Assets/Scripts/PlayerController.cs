@@ -84,10 +84,6 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 		if(!PV.IsMine)
 			return;
 
-		Look();
-		Move();
-		Jump();
-
 		for(int i = 0; i < items.Length; i++)
 		{
 			if(Input.GetKeyDown((i + 1).ToString()))
@@ -196,6 +192,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 		Vector3 moveDir = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
 
 		moveAmount = Vector3.SmoothDamp(moveAmount, moveDir * (Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : walkSpeed), ref smoothMoveVelocity, smoothTime);
+		rb.MovePosition(rb.position + transform.TransformDirection(moveAmount) * Time.fixedDeltaTime);
+
 	}
 
 	void Jump()
@@ -257,7 +255,9 @@ public class PlayerController : MonoBehaviourPunCallbacks, IDamageable
 		if(!PV.IsMine)
 			return;
 
-		rb.MovePosition(rb.position + transform.TransformDirection(moveAmount) * Time.fixedDeltaTime);
+		Look();
+		Move();
+		Jump();
 	}
 
 	public void TakeDamage(float damage)

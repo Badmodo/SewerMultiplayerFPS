@@ -38,8 +38,14 @@ public class SingleShotGun : Gun
 		ray.origin = cam.transform.position;
 		if(Physics.Raycast(ray, out RaycastHit hit))
 		{
-			hit.collider.gameObject.GetComponent<IDamageable>()?.TakeDamage(((GunInfo)itemInfo).damage);
-			PV.RPC("RPC_Shoot", RpcTarget.All, hit.point, hit.normal);
+			TeamMember tm = hit.transform.GetComponent<TeamMember>();
+			TeamMember myTm = this.GetComponent<TeamMember>();
+
+			if (tm == null || tm.TeamID == 0 || myTm == null || myTm.TeamID == 0 || tm.TeamID != myTm.TeamID)
+			{
+				hit.collider.gameObject.GetComponent<IDamageable>()?.TakeDamage(((GunInfo)itemInfo).damage);
+				PV.RPC("RPC_Shoot", RpcTarget.All, hit.point, hit.normal);
+			}
 		}
 
 		GunFire.Play();
